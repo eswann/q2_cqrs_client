@@ -23,9 +23,30 @@ export default function() {
           productname: "Rigid Table Saw",
           productprice: 459.55,
           quantity: 1,
-          total: 459.99
+          total: 459.55
+        }
+      },{
+        type: "lineitems",
+        id: 2,
+        attributes: {
+          productname: '18" Dewalt Clamp',
+          productprice: 27.99,
+          quantity: 4,
+          total: 111.96
         }
       }]
     }
   });
+
+  this.get('/cartsummaries', function(request) {
+    return {
+      data: {
+        type: "cartsummary",
+        id: 1,
+        attributes: {
+          total: 571.51
+        }
+      }
+    }
+  })
 }

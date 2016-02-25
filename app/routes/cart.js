@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 	model() {
-		return this.store.findAll('lineitem');
+		return {
+			lineitems: this.store.findAll('lineitem'),
+			cartsummary: this.store.queryRecord('cartsummary', 'abc')
+		}
 	}
 });

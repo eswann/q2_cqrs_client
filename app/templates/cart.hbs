@@ -1,26 +1,12 @@
 <h2>Your Cart</h2>
 
-{{#each model as |lineitem|}}
-	<div class="row">
-		<div class="col-md-4">
-			{{lineitem.productname}}
-		</div>
-		<div class="col-md-2">
-			{{lineitem.productprice}}
-		</div>
-		<div class="col-md-1">
-			{{lineitem.quantity}}
-		</div>
-		<div class="col-md-2">
-			{{lineitem.total}}
-		</div>
-	</div>
+{{#each model.lineitems as |lineitem|}}
+	{{line-item lineitem=lineitem}}
 {{/each}}
 
 <div class="row">
-	<div class="col-md-6"></div>
-	<div class="col-md-1"><b>Total:</b></div>
+	<div class="col-md-1 col-md-offset-7"><b>Total:</b></div>
 	<div class="col-md-2">
-		<b>459.99</b>
+		<b>{{model.cartsummary.total}}</b>
 	</div>
 </div>
