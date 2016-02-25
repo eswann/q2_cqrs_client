@@ -1,0 +1,7 @@
+<h2>Products</h2>
+
+{{#each model as |product|}}
+	<h4>{{product.name}}</h4>
+	<img src="{{product.imageUrl}}" height=200 />
+	<p>Price: {{product.price}}</p>
+{{/each}}
