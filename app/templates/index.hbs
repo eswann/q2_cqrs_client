@@ -1,5 +1,9 @@
 <h2>Products</h2>
 
-{{#each model as |product|}}
-	{{product-tile product=product}}
-{{/each}}
+<div class="row">
+	{{#each model as |product|}}
+		<div class="col-md-3">
+			{{product-tile product=product}}			
+		</div>
+	{{/each}}
+</div>

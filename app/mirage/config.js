@@ -10,6 +10,22 @@ export default function() {
           price: 459.55,
           imageurl: "http://www.homedepot.com/catalog/productImages/400/79/79aab6e4-a7f0-43f8-ae80-739b428bfae3_400.jpg"
         }
+      },{
+        type: "products",
+        id: 2,
+        attributes: {
+          name: '18" Dewalt Clamp',
+          price: 27.99,
+          imageurl: "http://hybrisimages.toolcommerce.com//prod/500X500/DWHT83193_1_500X500.jpg"
+        }
+      },{
+        type: "products",
+        id: 3,
+        attributes: {
+          name: 'Stanley Speed Square',
+          price: 15.61,
+          imageurl: "https://static.grainger.com/rp/s/is/image/Grainger/6R179_AS01?$mdmain$"
+        }
       }]
     };
   });
